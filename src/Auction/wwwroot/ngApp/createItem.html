@@ -1,0 +1,27 @@
+﻿<div class="row">
+    <div class="col-md-6 col-md-offset3">
+        <h1>Create a new Auction</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset3">
+        <form ng-submit="controller.SaveItem()">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" ng-model="controller.itemToCreate.name" />
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" ng-model="controller.itemToCreate.description" />
+            </div>
+            <div class="form-group">
+                <label>Days Left</label>
+                <input type="number" class="form-control" ng-model="controller.itemToCreate.daysLeft" />
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" value="Save" />
+            </div>
+        </form>
+    </div>
+</div>

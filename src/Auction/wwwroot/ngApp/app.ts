@@ -19,6 +19,24 @@ namespace MyApp {
                 controller: MyApp.Controllers.AboutController,
                 controllerAs: 'controller'
             })
+            .state('items', {
+                url: '/items',
+                templateUrl: '/ngApp/items.html',
+                controller: MyApp.Controllers.ItemsController,
+                controllerAs: 'controller'
+            })
+            .state('details', {
+                url: '/items/:id',
+                templateUrl: '/ngApp/details.html',
+                controller: MyApp.Controllers.DetailsController,
+                controllerAs: 'controller'
+            })
+            .state('createItem', {
+                url: '/createItem',
+                templateUrl: '/ngApp/createItem.html',
+                controller: MyApp.Controllers.ItemCreateController,
+                controllerAs: 'controller'
+            })
             .state('notFound', {
                 url: '/notFound',
                 templateUrl: '/ngApp/notFound.html'
